@@ -44,7 +44,7 @@ class UserComponent extends React.Component {
         };
 
 
-        axios.post("http://localhost:8080/api/users", taskDetails)
+        axios.post("http://localhost:5000/add_task", taskDetails)
             .then(response =>{
                 if(response.data != null){
                     alert("Task saved");
